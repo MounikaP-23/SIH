@@ -1,0 +1,192 @@
+<Card className="filter-container mb-4">
+        <Card.Body>
+          <Row className="g-3">
+            <Col md={2}>
+              <Form.Label>Subject</Form.Label>
+              <Form.Select
+                name="subject"
+                value={filters.subject}
+                onChange={handleFilterChange}
+              >
+                <option value="">All Subjects</option>
+                {subjects.map(subject => (
+                  <option key={subject} value={subject}>{subject}</option>
+                ))}
+              </Form.Select>
+            </Col>
+            {/* Remove class level dropdown for students */}
+            {user?.role !== 'Student' && (
+              <Col md={2}>
+                <Form.Label>Class Level</Form.Label>
+                <Form.Select
+                  name="classLevel"
+                  value={filters.classLevel}
+                  onChange={handleFilterChange}
+                >
+                  <option value="">All Classes</option>
+                  {classLevels.map(level => (
+                    <option key={level} value={level}>Class {level}</option>
+                  ))}
+                </Form.Select>
+              </Col>
+            )}
+            <Col md={2}>
+              <Form.Label>Language</Form.Label>
+              <Form.Select
+                name="language"
+                value={filters.language}
+                onChange={handleFilterChange}
+              >
+                <option value="">All Languages</option>
+                {languages.map(lang => (
+                  <option key={lang.code} value={lang.code}>{lang.label}</option>
+                ))}
+              </Form.Select>
+            </Col>
+            <Col md={3}>
+              <Form.Label>Category</Form.Label>
+              <Form.Select
+                name="category"
+                value={filters.category}
+                onChange={handleFilterChange}
+              >
+                <option value="">All Categories</option>
+                {categories.map(cat => (
+                  <option key={cat} value={cat}>{cat}</option>
+                ))}
+              </Form.Select>
+            </Col>
+            {/* Content Type filter removed */}
+            <Col md={12} className="d-flex align-items-end gap-2">
+              <Button variant="primary" onClick={applyFilters} className="flex-fill">
+                Apply Filters
+              </Button>
+              <Button variant="outline-secondary" onClick={clearFilters}>
+                Clear
+              </Button>
+            </Col>
+          </Row>
+        </Card.Body>
+      </Card>
+=======
+      {/* Filters */}
+      <Card className="filter-container mb-4">
+        <Card.Body>
+          <Row className="g-3">
+            <Col md={2}>
+              <Form.Label>Subject</Form.Label>
+              <Form.Select
+                name="subject"
+                value={filters.subject}
+                onChange={handleFilterChange}
+              >
+                <option value="">All Subjects</option>
+                {subjects.map(subject => (
+                  <option key={subject} value={subject}>{subject}</option>
+                ))}
+              </Form.Select>
+            </Col>
+            {/* Remove class level dropdown for students */}
+            {user?.role !== 'Student' && (
+              <Col md={2}>
+                <Form.Label>Class Level</Form.Label>
+                <Form.Select
+                  name="classLevel"
+                  value={filters.classLevel}
+                  onChange={handleFilterChange}
+                >
+                  <option value="">All Classes</option>
+                  {classLevels.map(level => (
+                    <option key={level} value={level}>Class {level}</option>
+                  ))}
+                </Form.Select>
+              </Col>
+            )}
+            <Col md={2}>
+              <Form.Label>Language</Form.Label>
+              <Form.Select
+                name="language"
+                value={filters.language}
+                onChange={handleFilterChange}
+              >
+                <option value="">All Languages</option>
+                {languages.map(lang => (
+                  <option key={lang.code} value={lang.code}>{lang.label}</option>
+                ))}
+              </Form.Select>
+            </Col>
+            <Col md={3}>
+              <Form.Label>Category</Form.Label>
+              <Form.Select
+                name="category"
+                value={filters.category}
+                onChange={handleFilterChange}
+              >
+                <option value="">All Categories</option>
+                {categories.map(cat => (
+                  <option key={cat} value={cat}>{cat}</option>
+                ))}
+              </Form.Select>
+            </Col>
+            {/* Content Type filter removed */}
+            <Col md={12} className="d-flex align-items-end gap-2">
+              <Button variant="primary" onClick={applyFilters} className="flex-fill">
+                Apply Filters
+              </Button>
+              <Button variant="outline-secondary" onClick={clearFilters}>
+                Clear
+              </Button>
+            </Col>
+          </Row>
+        </Card.Body>
+      </Card>
+
+      {/* Quizzes Section */}
+      {quizzes.length > 0 && (
+        <>
+          <h4 className="mb-3">Quizzes</h4>
+          <Row className="g-4 mb-5">
+            {quizzes.map(lesson => (
+              <Col key={lesson._id} md={6} lg={4}>
+                <Card className="lesson-card h-100 border-success">
+                  <Card.Body className="d-flex flex-column">
+                    <div className="d-flex justify-content-between align-items-start mb-3">
+                      <div>
+                        <Badge bg="primary" className="me-2">{lesson.subject}</Badge>
+                        <Badge bg="secondary">Class {lesson.classLevel}</Badge>
+                      </div>
+                      <Badge bg="success">
+                        <i className="fas fa-question-circle me-1"></i>
+                        {lesson.quiz.questions.length} Questions
+                      </Badge>
+                    </div>
+                    
+                    <h5 className="lesson-title">{lesson.title} - Quiz</h5>
+                    <p className="lesson-description flex-grow-1">
+                      Test your knowledge of {lesson.title} with this interactive quiz.
+                    </p>
+                    
+                    <div className="mt-auto">
+                      <div className="d-flex justify-content-between align-items-center mb-3">
+                        <small className="text-muted">
+                          by {lesson.createdBy.name}
+                        </small>
+                        <small className="text-muted">
+                          {new Date(lesson.createdAt).toLocaleDateString()}
+                        </small>
+                      </div>
+                      
+                      <Link to={`/student/lessons/${lesson._id}`}>
+                        <Button variant="success" className="w-100">
+                          <i className="fas fa-play me-2"></i>
+                          Start Quiz
+                        </Button>
+                      </Link>
+                    </div>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </>
+      )}

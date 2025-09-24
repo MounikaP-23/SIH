@@ -1,0 +1,83 @@
+{
+  "common": {
+    "appName": "एडुप्लेटफ़ॉर्म",
+    "studentPortal": "विद्यार्थी पोर्टल",
+    "teacherPortal": "शिक्षक पोर्टल",
+    "adminPortal": "एडमिन पोर्टल",
+    "login": "लॉगिन",
+    "logout": "लॉगआउट",
+    "signUp": "साइन अप",
+    "backToHome": "← होम पर वापस",
+    "language": "भाषा",
+    "english": "अंग्रेज़ी",
+    "hindi": "हिंदी",
+    "punjabi": "पंजाबी"
+  },
+  "landing": {
+    "title": "डिजिटल लर्निंग प्लेटफ़ॉर्म",
+    "subtitle": "छात्रों, शिक्षकों और प्रशासकों को व्यापक डिजिटल सीखने के अनुभव से सशक्त बनाना। पाठ तक पहुँचें, क्विज़ दें और प्रगति ट्रैक करें — सब कुछ एक जगह।",
+    "students": "छात्र",
+    "studentsSub": "पाठ तक पहुँचें और प्रगति ट्रैक करें",
+    "teachers": "शिक्षक",
+    "teachersSub": "पाठ बनाएं और प्रबंधित करें",
+    "admins": "एडमिन",
+    "adminsSub": "उपयोगकर्ताओं और एनालिटिक्स का प्रबंधन करें"
+  },
+  "login": {
+    "welcome": "वापसी पर स्वागत है",
+    "signInToAccount": "अपने खाते में साइन इन करें",
+    "email": "ईमेल पता",
+    "password": "पासवर्ड",
+    "emailPlaceholder": "अपना ईमेल दर्ज करें",
+    "passwordPlaceholder": "अपना पासवर्ड दर्ज करें",
+    "signingIn": "साइन इन हो रहा है...",
+    "signIn": "साइन इन",
+    "noAccount": "खाता नहीं है?",
+    "signUpHere": "यहाँ साइन अप करें"
+  },
+  "signup": {
+    "createAccount": "खाता बनाएं",
+    "joinPlatform": "हमारे डिजिटल लर्निंग प्लेटफ़ॉर्म से जुड़ें",
+    "fullName": "पूरा नाम",
+    "fullNamePlaceholder": "अपना पूरा नाम दर्ज करें",
+    "email": "ईमेल पता",
+    "emailPlaceholder": "अपना ईमेल दर्ज करें",
+    "role": "भूमिका",
+    "student": "छात्र",
+    "teacher": "शिक्षक",
+    "admin": "एडमिन",
+    "password": "पासवर्ड",
+    "confirmPassword": "पासवर्ड की पुष्टि करें",
+    "passwordPlaceholder": "पासवर्ड बनाएं",
+    "confirmPasswordPlaceholder": "अपने पासवर्ड की पुष्टि करें",
+    "creatingAccount": "खाता बनाया जा रहा है...",
+    "createAccountBtn": "खाता बनाएं",
+    "haveAccount": "पहले से खाता है?",
+    "signInHere": "यहाँ साइन इन करें",
+    "passwordsDoNotMatch": "पासवर्ड मेल नहीं खाते",
+    "passwordMin": "पासवर्ड कम से कम 6 अक्षरों का होना चाहिए"
+  },
+  "student": {
+    "lessons": "पाठ",
+    "quizzes": "क्विज़",
+    "progress": "प्रगति",
+    "welcomeBack": "वापसी पर स्वागत है,",
+    "completed": "पूर्ण",
+    "avgScore": "औसत स्कोर",
+    "exploreLessons": "हमारे व्यापक पाठ संग्रह से सीखें",
+    "testKnowledge": "इंटरैक्टिव क्विज़ के साथ अपना ज्ञान परखें",
+    "trackJourney": "अपनी सीखने की यात्रा और उपलब्धियों को ट्रैक करें"
+  },
+  "teacher": {
+    "myLessons": "मेरे पाठ",
+    "addLesson": "पाठ जोड़ें",
+    "trackStudents": "छात्रों पर नज़र रखें",
+    "manageLessons": "अपने बनाए गए पाठ और सामग्री का प्रबंधन करें",
+    "createNewLessons": "इंटरैक्टिव सामग्री और क्विज़ के साथ नए पाठ बनाएं",
+    "monitorStudents": "छात्रों की प्रगति और प्रदर्शन की निगरानी करें",
+    "totalLessons": "कुल पाठ",
+    "withQuizzes": "क्विज़ के साथ"
+  }
+}
+
+

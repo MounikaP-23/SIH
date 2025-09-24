@@ -1,0 +1,83 @@
+{
+  "common": {
+    "appName": "ਐਡੂਪਲੇਟਫਾਰਮ",
+    "studentPortal": "ਵਿਦਿਆਰਥੀ ਪੋਰਟਲ",
+    "teacherPortal": "ਅਧਿਆਪਕ ਪੋਰਟਲ",
+    "adminPortal": "ਐਡਮਿਨ ਪੋਰਟਲ",
+    "login": "ਲਾਗਇਨ",
+    "logout": "ਲਾੱਗ ਆਉਟ",
+    "signUp": "ਸਾਈਨ ਅਪ",
+    "backToHome": "← ਘਰ ਵਾਪਸ",
+    "language": "ਭਾਸ਼ਾ",
+    "english": "ਅੰਗ੍ਰੇਜ਼ੀ",
+    "hindi": "ਹਿੰਦੀ",
+    "punjabi": "ਪੰਜਾਬੀ"
+  },
+  "landing": {
+    "title": "ਡਿਜਿਟਲ ਲਰਨਿੰਗ ਪਲੇਟਫਾਰਮ",
+    "subtitle": "ਵਿਦਿਆਰਥੀਆਂ, ਅਧਿਆਪਕਾਂ ਅਤੇ ਪ੍ਰਸ਼ਾਸਕਾਂ ਨੂੰ ਵਿਸ਼ਾਲ ਡਿਜਿਟਲ ਸਿੱਖਿਆ ਅਨੁਭਵ ਨਾਲ ਸਸ਼ਕਤ ਕਰਨਾ। ਪਾਠਾਂ ਤੱਕ ਪਹੁੰਚੋ, ਕਵਿਜ਼ ਦਿਓ ਅਤੇ ਤਰੱਕੀ ਟਰੈਕ ਕਰੋ—ਸਭ ਕੁਝ ਇੱਕ ਜਗ੍ਹਾ।",
+    "students": "ਵਿਦਿਆਰਥੀ",
+    "studentsSub": "ਪਾਠਾਂ ਤੱਕ ਪਹੁੰਚੋ ਅਤੇ ਤਰੱਕੀ ਟਰੈਕ ਕਰੋ",
+    "teachers": "ਅਧਿਆਪਕ",
+    "teachersSub": "ਪਾਠ ਬਣਾਓ ਅਤੇ ਪ੍ਰਬੰਧਿਤ ਕਰੋ",
+    "admins": "ਐਡਮਿਨ",
+    "adminsSub": "ਯੂਜ਼ਰ ਅਤੇ ਐਨਾਲਿਟਿਕਸ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰੋ"
+  },
+  "login": {
+    "welcome": "ਵਾਪਸੀ 'ਤੇ ਸੁਆਗਤ ਹੈ",
+    "signInToAccount": "ਆਪਣੇ ਖਾਤੇ ਵਿੱਚ ਸਾਈਨ ਇਨ ਕਰੋ",
+    "email": "ਈਮੇਲ ਪਤਾ",
+    "password": "ਪਾਸਵਰਡ",
+    "emailPlaceholder": "ਆਪਣਾ ਈਮੇਲ ਦਰਜ ਕਰੋ",
+    "passwordPlaceholder": "ਆਪਣਾ ਪਾਸਵਰਡ ਦਰਜ ਕਰੋ",
+    "signingIn": "ਸਾਈਨ ਇਨ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
+    "signIn": "ਸਾਈਨ ਇਨ",
+    "noAccount": "ਖਾਤਾ ਨਹੀਂ ਹੈ?",
+    "signUpHere": "ਇੱਥੇ ਸਾਈਨ ਅਪ ਕਰੋ"
+  },
+  "signup": {
+    "createAccount": "ਖਾਤਾ ਬਣਾਓ",
+    "joinPlatform": "ਸਾਡੇ ਡਿਜਿਟਲ ਲਰਨਿੰਗ ਪਲੇਟਫਾਰਮ ਨਾਲ ਜੁੜੋ",
+    "fullName": "ਪੂਰਾ ਨਾਮ",
+    "fullNamePlaceholder": "ਆਪਣਾ ਪੂਰਾ ਨਾਮ ਦਰਜ ਕਰੋ",
+    "email": "ਈਮੇਲ ਪਤਾ",
+    "emailPlaceholder": "ਆਪਣਾ ਈਮੇਲ ਦਰਜ ਕਰੋ",
+    "role": "ਭੂਮਿਕਾ",
+    "student": "ਵਿਦਿਆਰਥੀ",
+    "teacher": "ਅਧਿਆਪਕ",
+    "admin": "ਐਡਮਿਨ",
+    "password": "ਪਾਸਵਰਡ",
+    "confirmPassword": "ਪਾਸਵਰਡ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
+    "passwordPlaceholder": "ਪਾਸਵਰਡ ਬਣਾਓ",
+    "confirmPasswordPlaceholder": "ਆਪਣੇ ਪਾਸਵਰਡ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
+    "creatingAccount": "ਖਾਤਾ ਬਣਾਇਆ ਜਾ ਰਿਹਾ ਹੈ...",
+    "createAccountBtn": "ਖਾਤਾ ਬਣਾਓ",
+    "haveAccount": "ਪਹਿਲਾਂ ਹੀ ਖਾਤਾ ਹੈ?",
+    "signInHere": "ਇੱਥੇ ਸਾਈਨ ਇਨ ਕਰੋ",
+    "passwordsDoNotMatch": "ਪਾਸਵਰਡ ਮੇਲ ਨਹੀਂ ਖਾਂਦੇ",
+    "passwordMin": "ਪਾਸਵਰਡ ਘੱਟੋ-ਘੱਟ 6 ਅੱਖਰਾਂ ਦਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+  },
+  "student": {
+    "lessons": "ਪਾਠ",
+    "quizzes": "ਕਵਿਜ਼",
+    "progress": "ਤਰੱਕੀ",
+    "welcomeBack": "ਵਾਪਸੀ 'ਤੇ ਸੁਆਗਤ ਹੈ,",
+    "completed": "ਪੂਰਾ ਹੋਇਆ",
+    "avgScore": "ਔਸਤ ਸਕੋਰ",
+    "exploreLessons": "ਸਾਡੇ ਵਿਸ਼ਾਲ ਪਾਠ ਲਾਇਬ੍ਰੇਰੀ ਤੋਂ ਸਿੱਖੋ",
+    "testKnowledge": "ਇੰਟਰੈਕਟਿਵ ਕਵਿਜ਼ ਨਾਲ ਆਪਣਾ ਗਿਆਨ ਪਰਖੋ",
+    "trackJourney": "ਆਪਣੀ ਸਿੱਖਿਆ ਦੀ ਯਾਤਰਾ ਅਤੇ ਉਪਲਬਧੀਆਂ ਟਰੈਕ ਕਰੋ"
+  },
+  "teacher": {
+    "myLessons": "ਮੇਰੇ ਪਾਠ",
+    "addLesson": "ਪਾਠ ਜੋੜੋ",
+    "trackStudents": "ਵਿਦਿਆਰਥੀਆਂ 'ਤੇ ਨਜ਼ਰ ਰੱਖੋ",
+    "manageLessons": "ਆਪਣੇ ਬਣਾਏ ਪਾਠ ਅਤੇ ਸਮੱਗਰੀ ਦਾ ਪ੍ਰਬੰਧ ਕਰੋ",
+    "createNewLessons": "ਇੰਟਰੈਕਟਿਵ ਸਮੱਗਰੀ ਅਤੇ ਕਵਿਜ਼ ਨਾਲ ਨਵੇਂ ਪਾਠ ਬਣਾਓ",
+    "monitorStudents": "ਵਿਦਿਆਰਥੀਆਂ ਦੀ ਤਰੱਕੀ ਅਤੇ ਪ੍ਰਦਰਸ਼ਨ ਦੀ ਨਿਗਰਾਨੀ ਕਰੋ",
+    "totalLessons": "ਕੁੱਲ ਪਾਠ",
+    "withQuizzes": "ਕਵਿਜ਼ ਨਾਲ"
+  }
+}
+
+

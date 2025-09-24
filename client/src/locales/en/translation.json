@@ -1,0 +1,83 @@
+{
+  "common": {
+    "appName": "EduPlatform",
+    "studentPortal": "Student Portal",
+    "teacherPortal": "Teacher Portal",
+    "adminPortal": "Admin Portal",
+    "login": "Login",
+    "logout": "Logout",
+    "signUp": "Sign Up",
+    "backToHome": "← Back to Home",
+    "language": "Language",
+    "english": "English",
+    "hindi": "Hindi",
+    "punjabi": "Punjabi"
+  },
+  "landing": {
+    "title": "Digital Learning Platform",
+    "subtitle": "Empowering students, teachers, and administrators with a comprehensive digital learning experience. Access lessons, take quizzes, and track progress all in one place.",
+    "students": "Students",
+    "studentsSub": "Access lessons and track progress",
+    "teachers": "Teachers",
+    "teachersSub": "Create and manage lessons",
+    "admins": "Admins",
+    "adminsSub": "Manage users and analytics"
+  },
+  "login": {
+    "welcome": "Welcome Back",
+    "signInToAccount": "Sign in to your account",
+    "email": "Email Address",
+    "password": "Password",
+    "emailPlaceholder": "Enter your email",
+    "passwordPlaceholder": "Enter your password",
+    "signingIn": "Signing In...",
+    "signIn": "Sign In",
+    "noAccount": "Don't have an account?",
+    "signUpHere": "Sign up here"
+  },
+  "signup": {
+    "createAccount": "Create Account",
+    "joinPlatform": "Join our digital learning platform",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Enter your full name",
+    "email": "Email Address",
+    "emailPlaceholder": "Enter your email",
+    "role": "Role",
+    "student": "Student",
+    "teacher": "Teacher",
+    "admin": "Admin",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "passwordPlaceholder": "Create a password",
+    "confirmPasswordPlaceholder": "Confirm your password",
+    "creatingAccount": "Creating Account...",
+    "createAccountBtn": "Create Account",
+    "haveAccount": "Already have an account?",
+    "signInHere": "Sign in here",
+    "passwordsDoNotMatch": "Passwords do not match",
+    "passwordMin": "Password must be at least 6 characters"
+  },
+  "student": {
+    "lessons": "Lessons",
+    "quizzes": "Quizzes",
+    "progress": "Progress",
+    "welcomeBack": "Welcome back,",
+    "completed": "Completed",
+    "avgScore": "Avg Score",
+    "exploreLessons": "Explore and learn from our comprehensive lesson library",
+    "testKnowledge": "Test your knowledge with interactive quizzes",
+    "trackJourney": "Track your learning journey and achievements"
+  },
+  "teacher": {
+    "myLessons": "My Lessons",
+    "addLesson": "Add Lesson",
+    "trackStudents": "Track Students",
+    "manageLessons": "Manage your created lessons and content",
+    "createNewLessons": "Create new lessons with interactive content and quizzes",
+    "monitorStudents": "Monitor student progress and performance",
+    "totalLessons": "Total Lessons",
+    "withQuizzes": "With Quizzes"
+  }
+}
+
+
