@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Row, Col, Card, Table, Badge, ProgressBar } from 'react-bootstrap';
+import { Row, Col, Card, ProgressBar } from 'react-bootstrap';
 import { useData } from '../../contexts/DataContext';
 
 const AnalyticsPage: React.FC = () => {

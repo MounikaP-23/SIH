@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Row, Col, Card, Form, Button, Badge, Spinner, Modal, DropdownButton, Dropdown } from 'react-bootstrap';
+import { Row, Col, Card, Form, Button, Badge, Modal, DropdownButton, Dropdown } from 'react-bootstrap';
 import { useData } from '../../contexts/DataContext';
 import { useAuth } from '../../contexts/AuthContext';
 import SimpleVoiceControl from './SimpleVoiceControl';
@@ -88,9 +88,9 @@ const LessonsPage: React.FC = () => {
     // Intentionally omit fetchLessons from deps to avoid function identity changes causing loops
   }, [autoLoaded, user?.classLevel, user?.role, filters.language]);
 
-  // Separate lessons with quizzes
-  const quizzes = lessons.filter(lesson => lesson.quiz && lesson.quiz.questions && lesson.quiz.questions.length > 0);
-  const nonQuizLessons = lessons.filter(lesson => !lesson.quiz || !lesson.quiz.questions || lesson.quiz.questions.length === 0);
+  // Separate lessons with quizzes (for future use)
+  // const quizzes = lessons.filter(lesson => lesson.quiz && lesson.quiz.questions && lesson.quiz.questions.length > 0);
+  // const nonQuizLessons = lessons.filter(lesson => !lesson.quiz || !lesson.quiz.questions || lesson.quiz.questions.length === 0);
 
   const subjects = ['Math', 'Science', 'English', 'Punjabi', 'Social Studies', 'Computer Science'];
   const classLevels = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -112,9 +112,9 @@ const LessonsPage: React.FC = () => {
 
   return (
     <div>
-      {/* Quick actions */}
-      <div className="d-flex justify-content-end mb-3">
-        <Button variant="success" size="sm" onClick={quickDigitalSkills}>
+      {/* Modern Quick Actions */}
+      <div className="d-flex justify-content-end mb-4">
+        <Button variant="success" size="sm" onClick={quickDigitalSkills} className="hover-lift">
           <i className="fas fa-bolt me-2"></i>
           Show Digital Skills
         </Button>
@@ -210,18 +210,21 @@ const LessonsPage: React.FC = () => {
               </Card>
             </Col>
           ) : (
-            lessons.map(lesson => (
+            lessons.map((lesson, index) => (
               <Col key={lesson._id} md={6} lg={4}>
-                <Card className="lesson-card h-100">
+                <Card className="lesson-card h-100 fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
                   <Card.Body className="d-flex flex-column">
                     <div className="lesson-meta mb-3">
                       <Badge bg="primary" className="meta-badge">
+                        <i className="fas fa-book me-1"></i>
                         {lesson.subject}
                       </Badge>
                       <Badge bg="secondary" className="meta-badge">
+                        <i className="fas fa-graduation-cap me-1"></i>
                         Class {lesson.classLevel}
                       </Badge>
                       <Badge bg="info" className="meta-badge">
+                        <i className="fas fa-language me-1"></i>
                         {lesson.language}
                       </Badge>
                     </div>
@@ -232,26 +235,38 @@ const LessonsPage: React.FC = () => {
                     </p>
                     
                     <div className="mt-auto">
-                      <div className="d-flex justify-content-between align-items-center mb-2">
-                        <small className="text-muted">
-                          by {lesson.createdBy.name}
-                        </small>
+                      <div className="d-flex justify-content-between align-items-center mb-3">
+                        <div className="d-flex align-items-center">
+                          <div className="glass-effect rounded-circle d-flex align-items-center justify-content-center me-2" 
+                               style={{ width: '32px', height: '32px' }}>
+                            <i className="fas fa-user text-primary small"></i>
+                          </div>
+                          <small className="text-muted">
+                            by {lesson.createdBy.name}
+                          </small>
+                        </div>
                         <div className="d-flex gap-2 align-items-center">
-                          <DropdownButton id={`lang-dd-${lesson._id}`} title="Language" variant="outline-secondary" size="sm">
-                            <Dropdown.Item as={Link} to={`/student/lessons/${lesson._id}?lang=en`}>English</Dropdown.Item>
-                            <Dropdown.Item as={Link} to={`/student/lessons/${lesson._id}?lang=hi`}>Hindi</Dropdown.Item>
-                            <Dropdown.Item as={Link} to={`/student/lessons/${lesson._id}?lang=pa`}>Punjabi</Dropdown.Item>
+                          <DropdownButton id={`lang-dd-${lesson._id}`} title="Language" variant="outline-secondary" size="sm" className="hover-lift">
+                            <Dropdown.Item as={Link} to={`/student/lessons/${lesson._id}?lang=en`}>
+                              <i className="fas fa-flag me-2"></i>English
+                            </Dropdown.Item>
+                            <Dropdown.Item as={Link} to={`/student/lessons/${lesson._id}?lang=hi`}>
+                              <i className="fas fa-flag me-2"></i>Hindi
+                            </Dropdown.Item>
+                            <Dropdown.Item as={Link} to={`/student/lessons/${lesson._id}?lang=pa`}>
+                              <i className="fas fa-flag me-2"></i>Punjabi
+                            </Dropdown.Item>
                           </DropdownButton>
-                        <SimpleVoiceControl 
-                          key={`voice-${lesson.language}-${lesson._id}`}
-                          text={`${lesson.title}. ${lesson.description}`}
-                          language={lesson.language}
-                        />
+                          <SimpleVoiceControl 
+                            key={`voice-${lesson.language}-${lesson._id}`}
+                            text={`${lesson.title}. ${lesson.description}`}
+                            language={lesson.language}
+                          />
                         </div>
                       </div>
                       <div className="d-flex justify-content-center">
                         <Link to={`/student/lessons/${lesson._id}`}>
-                          <Button variant="primary" size="lg">
+                          <Button variant="primary" size="lg" className="hover-lift shadow-glow">
                             <i className="fas fa-play me-2"></i>
                             Start Lesson
                           </Button>

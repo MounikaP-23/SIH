@@ -82,14 +82,20 @@ const SignupPage: React.FC = () => {
   };
 
   return (
-    <div className="min-vh-100 d-flex align-items-center" style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}>
+    <div className="min-vh-100 d-flex align-items-center" style={{ background: 'var(--gradient-primary-modern)' }}>
       <Container>
         <Row className="justify-content-center">
           <Col md={6} lg={5}>
-            <Card className="form-container border-0">
+            <Card className="form-container border-0 shadow-glow">
               <Card.Body className="p-4">
                 <div className="text-center mb-4">
-                  <h2 className="fw-bold text-primary">{t('signup.createAccount')}</h2>
+                  <div className="mb-3">
+                    <div className="glass-effect rounded-circle d-inline-flex align-items-center justify-content-center" 
+                         style={{ width: '80px', height: '80px' }}>
+                      <i className="fas fa-user-plus fa-2x text-white"></i>
+                    </div>
+                  </div>
+                  <h2 className="fw-bold gradient-text mb-2">{t('signup.createAccount')}</h2>
                   <p className="text-muted">{t('signup.joinPlatform')}</p>
                 </div>
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import { Container, Row, Col, Nav, Card, Button } from 'react-bootstrap';
+import { Row, Col, Nav, Card, Button } from 'react-bootstrap';
 import { useAuth } from '../contexts/AuthContext';
 import { useData } from '../contexts/DataContext';
 import ManageUsersPage from './admin/ManageUsersPage';
@@ -8,26 +8,21 @@ import AnalyticsPage from './admin/AnalyticsPage';
 
 const AdminDashboard: React.FC = () => {
   const { user, logout } = useAuth();
-  const { users, lessons, progress, fetchUsers, fetchLessons } = useData();
+  const { users, lessons, fetchUsers, fetchLessons } = useData();
   const location = useLocation();
   const [activeTab, setActiveTab] = useState('users');
 
   useEffect(() => {
     fetchUsers();
     fetchLessons();
-  }, []);
+  }, [fetchUsers, fetchLessons]);
 
   useEffect(() => {
     const path = location.pathname.split('/')[2];
     if (path) setActiveTab(path);
   }, [location]);
 
-  const students = users.filter(u => u.role === 'Student');
-  const teachers = users.filter(u => u.role === 'Teacher');
   const totalLessons = lessons.length;
-  const lessonsWithQuizzes = lessons.filter(lesson => 
-    lesson.quiz && lesson.quiz.questions && lesson.quiz.questions.length > 0
-  ).length;
 
   const navItems = [
     { key: 'users', label: 'Manage Users', icon: 'fas fa-users', path: '/admin/users' },

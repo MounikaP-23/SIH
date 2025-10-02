@@ -1,14 +1,11 @@
-# Parent Login Fix
+# TODO for Fixing Blurred Text on Landing Page
 
-## Issues Identified:
-- Parent login not working due to missing redirect logic in LoginPage component
-- Parents get redirected to default route instead of `/parent` dashboard
+## Plan Overview
+- Remove the "glass-effect-visible" class from the hero title in LandingPage.tsx to eliminate the backdrop-filter blur effect.
+- Update the opacity of .hero-subtitle in landing-page.css to 1 for full visibility.
+- Test the changes.
 
-## Plan:
-1. ✅ Fix LoginPage redirect logic to handle 'Parent' role
-2. ⏳ Test parent login functionality
-3. ⏳ Verify parent dashboard loads correctly
-4. ⏳ Test parent-specific features
-
-## Files to Edit:
-- `client/src/components/LoginPage.tsx` - Add parent role handling in redirect logic
+## Steps
+- [x] Edit client/src/components/LandingPage.tsx
+- [x] Edit client/src/landing-page.css
+- [x] Run the development server and verify the fix

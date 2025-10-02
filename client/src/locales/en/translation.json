@@ -14,14 +14,63 @@
     "punjabi": "Punjabi"
   },
   "landing": {
-    "title": "Digital Learning Platform",
-    "subtitle": "Empowering students, teachers, and administrators with a comprehensive digital learning experience. Access lessons, take quizzes, and track progress all in one place.",
-    "students": "Students",
-    "studentsSub": "Access lessons and track progress",
-    "teachers": "Teachers",
-    "teachersSub": "Create and manage lessons",
-    "admins": "Admins",
-    "adminsSub": "Manage users and analytics"
+    "title": "Bridging the Digital Gap for Rural Education",
+    "subtitle": "Learn, Grow, and Build Digital Skills — Anytime, Anywhere (Even Offline)",
+    "startLearning": "Start Learning",
+    "teacherLogin": "Teacher Login",
+    "missionTitle": "Our Mission",
+    "missionText": "We're committed to bridging the digital divide in rural Nabha schools by providing accessible, offline-capable education that empowers students with essential digital literacy skills.",
+    "features": {
+      "worksOffline": {
+        "title": "Works Offline",
+        "description": "Access lessons and content without internet connection"
+      },
+      "localLanguages": {
+        "title": "Local Languages",
+        "description": "Content available in English, Punjabi, and Hindi"
+      },
+      "interactiveQuizzes": {
+        "title": "Interactive Quizzes",
+        "description": "Engage with dynamic quizzes to test your knowledge"
+      },
+      "teacherDashboard": {
+        "title": "Teacher Dashboard",
+        "description": "Comprehensive tools for educators to manage classes"
+      },
+      "lowEndDevice": {
+        "title": "Low-End Device Support",
+        "description": "Optimized for older smartphones and basic computers"
+      },
+      "progressTracking": {
+        "title": "Progress Tracking",
+        "description": "Monitor learning progress and achievements"
+      }
+    },
+    "impact": {
+      "schoolsSupported": "Schools Supported",
+      "studentsBenefited": "Students Benefited",
+      "teachersEmpowered": "Teachers Empowered"
+    },
+    "testimonial": {
+      "quote": "\"This platform has transformed how we teach digital skills in our rural school. Students are more engaged and confident with technology.\"",
+      "author": "Mrs. Kaur, Teacher",
+      "school": "Government School, Nabha"
+    },
+    "footer": {
+      "about": "About",
+      "privacy": "Privacy",
+      "contact": "Contact",
+      "support": "Support",
+      "followUs": "Follow Us"
+    },
+    "nav": {
+      "home": "Home",
+      "lessons": "Lessons",
+      "digitalLiteracy": "Digital Literacy",
+      "teacherDashboard": "Teacher Dashboard",
+      "about": "About",
+      "contact": "Contact"
+    }
   },
   "login": {
     "welcome": "Welcome Back",

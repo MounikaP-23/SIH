@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Row, Col, Card, Form, Button, Alert, Spinner } from 'react-bootstrap';
 import { useData } from '../../contexts/DataContext';
-import { addAllDigitalSkillsLessons, digitalSkillsLessons } from '../../utils/addDigitalSkillsLessons';
+import { addAllDigitalSkillsLessons } from '../../utils/addDigitalSkillsLessons';
 
 const AddLessonPage: React.FC = () => {
   const navigate = useNavigate();
@@ -41,14 +41,14 @@ const AddLessonPage: React.FC = () => {
     correctAnswer: 0
   });
 
-  const subjects = ['Math', 'Science', 'English', 'Punjabi', 'Social Studies', 'Computer Science'];
-  const categories = ['Digital Skills', 'School Subjects', 'Life Skills'];
-  const classLevels = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-  const languages = [
-    { code: 'en', name: 'English' },
-    { code: 'hi', name: 'Hindi' },
-    { code: 'pa', name: 'Punjabi' }
-  ];
+  // const subjects = ['Math', 'Science', 'English', 'Punjabi', 'Social Studies', 'Computer Science'];
+  // const categories = ['Digital Skills', 'School Subjects', 'Life Skills'];
+  // const classLevels = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  // const languages = [
+  //   { code: 'en', name: 'English' },
+  //   { code: 'hi', name: 'Hindi' },
+  //   { code: 'pa', name: 'Punjabi' }
+  // ];
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -466,7 +466,7 @@ const AddLessonPage: React.FC = () => {
 
                   {formData.images.map((image, index) => (
                     <div key={index} className="d-flex align-items-center gap-2 mb-2">
-                      <img src={image} alt={`Image ${index + 1}`} style={{ width: '50px', height: '50px', objectFit: 'cover' }} className="rounded" />
+                      <img src={image} alt={`Upload ${index + 1}`} style={{ width: '50px', height: '50px', objectFit: 'cover' }} className="rounded" />
                       <span className="flex-grow-1 text-truncate">{image.startsWith('data:') ? 'Pasted image' : image}</span>
                       <Button type="button" variant="outline-danger" size="sm" onClick={() => handleRemoveImage(index)}>
                         <i className="fas fa-times"></i>

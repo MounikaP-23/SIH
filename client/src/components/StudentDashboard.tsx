@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import { Container, Row, Col, Nav, Card, Button, Badge, ProgressBar } from 'react-bootstrap';
+import { Row, Col, Nav, Card, Button, Badge } from 'react-bootstrap';
 import { useAuth } from '../contexts/AuthContext';
 import { useData } from '../contexts/DataContext';
 import LessonsPage from './student/LessonsPage';
@@ -11,13 +11,13 @@ import VoiceTest from './student/VoiceTest';
 
 const StudentDashboard: React.FC = () => {
   const { user, logout } = useAuth();
-  const { fetchProgress, progress, fetchLessons } = useData();
+  const { fetchProgress, progress } = useData();
   const location = useLocation();
   const [activeTab, setActiveTab] = useState('lessons');
 
   useEffect(() => {
     fetchProgress();
-  }, []);
+  }, [fetchProgress]);
 
   useEffect(() => {
     const path = location.pathname.split('/')[2];

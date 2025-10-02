@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Nav, Card, Button, Badge, ProgressBar, Alert, Modal, Form } from 'react-bootstrap';
+import { Row, Col, Nav, Card, Button, ProgressBar, Alert, Modal, Form } from 'react-bootstrap';
 import { useAuth } from '../contexts/AuthContext';
 import { useData } from '../contexts/DataContext';
 
 const ParentDashboard: React.FC = () => {
   const { user, logout, fetchChildren, fetchChildrenProgress, linkChild } = useAuth();
-  const { fetchLessons } = useData();
+  const { } = useData();
   const [activeTab, setActiveTab] = useState('children');
   const [children, setChildren] = useState<any[]>([]);
   const [childrenProgress, setChildrenProgress] = useState<any>({});

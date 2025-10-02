@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal, Button, Card, Form, ProgressBar, Alert } from 'react-bootstrap';
+import { Modal, Button, Card, Form, ProgressBar } from 'react-bootstrap';
 
 interface QuizQuestion {
   question: string;

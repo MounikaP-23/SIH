@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import { Container, Row, Col, Nav, Card, Button } from 'react-bootstrap';
+import { Row, Col, Nav, Card, Button } from 'react-bootstrap';
 import { useAuth } from '../contexts/AuthContext';
 import { useData } from '../contexts/DataContext';
 import AddLessonPage from './teacher/AddLessonPage';
@@ -16,7 +16,7 @@ const TeacherDashboard: React.FC = () => {
 
   useEffect(() => {
     fetchLessons();
-  }, []);
+  }, [fetchLessons]);
 
   useEffect(() => {
     const path = location.pathname.split('/')[2];

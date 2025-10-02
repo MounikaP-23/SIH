@@ -31,7 +31,7 @@ class OfflineStorageService {
         }
 
         if (!db.objectStoreNames.contains('translations')) {
-          const translationsStore = db.createObjectStore('translations', { keyPath: 'key' });
+          db.createObjectStore('translations', { keyPath: 'key' });
         }
 
         if (!db.objectStoreNames.contains('offlineActions')) {

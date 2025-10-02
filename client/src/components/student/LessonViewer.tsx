@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
-import { Container, Row, Col, Card, Button, Alert, Spinner, Dropdown, DropdownButton } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Alert, Dropdown, DropdownButton } from 'react-bootstrap';
 import { useData } from '../../contexts/DataContext';
 import QuizComponent from './QuizComponent';
 import SimpleVoiceControl from './SimpleVoiceControl';
@@ -438,7 +438,7 @@ const LessonViewer: React.FC = () => {
                       <Col key={index} md={6} className="mb-3">
                         <img
                           src={image}
-                          alt={`Lesson image ${index + 1}`}
+                          alt={`Content ${index + 1}`}
                           className="img-fluid rounded"
                           style={{ maxHeight: '200px', objectFit: 'cover' }}
                         />
